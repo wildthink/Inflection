@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>77FCE22C-350D-4161-897F-15E5D88A4620</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Inflection</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7FCC071DB1CF8F59089760EF686080A1D9FD82A0</key>
+		<string>github.com:wilbert/Inflection.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Inflection.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7FCC071DB1CF8F59089760EF686080A1D9FD82A0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:wilbert/Inflection.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7FCC071DB1CF8F59089760EF686080A1D9FD82A0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7FCC071DB1CF8F59089760EF686080A1D9FD82A0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Inflection</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DF7D1B11B39B58E001E287B /* Pluralize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF7D1B01B39B58E001E287B /* Pluralize.swift */; };
+		1DF7D1B31B39B5C5001E287B /* PluralizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF7D1B21B39B5C5001E287B /* PluralizeTests.swift */; };
 		BDD8223F1AA4476700E48CEF /* Inflection_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8223E1AA4476700E48CEF /* Inflection_Tests.swift */; };
 		BDD822471AA4477E00E48CEF /* Inflection.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BDD822441AA4477E00E48CEF /* Inflection.podspec */; };
 		BDD822481AA4477E00E48CEF /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD822451AA4477E00E48CEF /* LICENSE.md */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DF7D1B01B39B58E001E287B /* Pluralize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pluralize.swift; sourceTree = "<group>"; };
+		1DF7D1B21B39B5C5001E287B /* PluralizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluralizeTests.swift; sourceTree = "<group>"; };
 		BDD822391AA4476700E48CEF /* Inflection Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Inflection Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD8223D1AA4476700E48CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD8223E1AA4476700E48CEF /* Inflection_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inflection_Tests.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD8223E1AA4476700E48CEF /* Inflection_Tests.swift */,
+				1DF7D1B21B39B5C5001E287B /* PluralizeTests.swift */,
 				BDD8223C1AA4476700E48CEF /* Supporting Files */,
 			);
 			path = "Inflection Tests";
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD8224A1AA447E400E48CEF /* Inflection.swift */,
+				1DF7D1B01B39B58E001E287B /* Pluralize.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -147,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD822491AA4477E00E48CEF /* README.md in Sources */,
+				1DF7D1B11B39B58E001E287B /* Pluralize.swift in Sources */,
+				1DF7D1B31B39B5C5001E287B /* PluralizeTests.swift in Sources */,
 				BDD822481AA4477E00E48CEF /* LICENSE.md in Sources */,
 				BDD8224B1AA447E400E48CEF /* Inflection.swift in Sources */,
 				BDD8223F1AA4476700E48CEF /* Inflection_Tests.swift in Sources */,
@@ -280,6 +288,7 @@
 				BDD822411AA4476700E48CEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
