@@ -19,8 +19,10 @@ public extension NSDictionary {
     }
     
     private func inflectDictionaryKeys(closure: (string: String) -> String) -> NSDictionary {
-        var newDictionary = NSMutableDictionary.new()
-        map(self) { newDictionary[closure(string: $0 as! String)] = $1 }
+        let newDictionary = NSMutableDictionary()
+        
+        self.map({ newDictionary[closure(string: $0 as! String)] = $1 })
+//        map(self) { newDictionary[closure(string: $0)] = $1 }
 
         return newDictionary.copy() as! NSDictionary
     }
@@ -86,14 +88,14 @@ public extension String {
     }
     
     private func lowerCaseFirstLetter() -> String {
-        var mutableString = self.mutableCopy() as! NSMutableString
+        let mutableString = self.mutableCopy() as! NSMutableString
         mutableString.replaceCharactersInRange(NSMakeRange(0, 1), withString: self.firstLetter().lowercaseString as String)
 
         return mutableString.copy() as! String
     }
     
     private func upperCaseFirstLetter() -> String {
-        var mutableString = self.mutableCopy() as! NSMutableString
+        let mutableString = self.mutableCopy() as! NSMutableString
         mutableString.replaceCharactersInRange(NSMakeRange(0, 1), withString: self.firstLetter().uppercaseString as String)
         
         return mutableString.copy() as! String
@@ -112,21 +114,21 @@ public extension String {
         let lowercaseSet = NSCharacterSet.lowercaseLetterCharacterSet()
         
         var buffer: NSString?
-        var output: NSMutableString = NSMutableString.new()
+        let output: NSMutableString = NSMutableString()
 
         scanner.caseSensitive = true
         
         while !scanner.atEnd {
             if scanner.scanCharactersFromSet(identifierSet, intoString: &buffer) {
                 continue
-            } else if count(identifier) > 0 {
-                var isUppercase: Bool = scanner.scanCharactersFromSet(uppercaseSet, intoString: &buffer)
+            } else if identifier.characters.count > 0 {
+                let isUppercase: Bool = scanner.scanCharactersFromSet(uppercaseSet, intoString: &buffer)
                 if isUppercase {
                     output.appendString(identifier)
                     output.appendString(buffer!.lowercaseString)
                 }
                 
-                var isLowercase: Bool = scanner.scanCharactersFromSet(lowercaseSet, intoString: &buffer)
+                let isLowercase: Bool = scanner.scanCharactersFromSet(lowercaseSet, intoString: &buffer)
                 if isLowercase {
                     output.appendString(buffer!.lowercaseString)
                 }
