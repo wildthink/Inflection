@@ -12,15 +12,15 @@ import XCTest
 class Inflection_Tests: XCTestCase {
     
     func testRubyToSwift() {
-        var subjectString = "createdAt".rubyCase()
-        var expectedString = "created_at"
+        let subjectString = "createdAt".rubyCase()
+        let expectedString = "created_at"
         
         XCTAssertEqual(subjectString, expectedString, "New string should be 'created_at'")
     }
     
     func testSwiftToRuby() {
-        var subjectString = "updated_at".swiftCase()
-        var expectedString = "updatedAt"
+        let subjectString = "updated_at".swiftCase()
+        let expectedString = "updatedAt"
         
         XCTAssertEqual(subjectString, expectedString, "New string should be 'createdAt'")
     }
@@ -31,5 +31,33 @@ class Inflection_Tests: XCTestCase {
 
         XCTAssertEqual((remoteDictionary as NSDictionary).swiftCase(), localDictionary as NSDictionary)
     }
-    
+
+    func testCases()
+    {
+        let input: String = "SomeOldHorse"
+
+        func p(type: String, _ str: String) {
+//            let output = input.performSelector(sel)
+            Swift.print ("\(input).\(type) -> \(str)")
+        }
+
+        p ("ruby", input.rubyCase())
+        p ("snakeCase", input.snakeCase())
+        p ("humanize", input.humanize())
+//        p ("upperCamelCase", input.upperCamelCase())
+        p ("camelCase", input.camelCase())
+//        p ("classify", input.classify())
+        p ("dashedCase", input.dashedCase())
+//        p ("dotNetCase", input.dotNetCase())
+        p ("javascriptCase", input.javascriptCase())
+        p ("lispCase", input.lispCase())
+        p ("objcCase", input.objcCase())
+        p ("pythonCase", input.pythonCase())
+        p ("swiftCase", input.swiftCase())
+        p ("underscoreCase", input.underscoreCase())
+//        p ("upperCamelCase", input.upperCamelCase())
+
+    }
 }
+
+

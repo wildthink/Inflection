@@ -2,7 +2,7 @@ import XCTest
 
 class PluralizeTests: XCTestCase {
     func testRegularNouns() {
-        var pairs = [
+        let pairs = [
             ("apple", "apples"),
             ("book", "books"),
             ("chair", "chairs"),
@@ -38,7 +38,7 @@ class PluralizeTests: XCTestCase {
     }
     
     func testUncountableNouns() {
-        var uncountables = [
+        let uncountables = [
             "air",
             "assistance",
             "coffee",
@@ -62,7 +62,7 @@ class PluralizeTests: XCTestCase {
     }
     
     func testIrregularNouns() {
-        var pairs = [
+        let pairs = [
             ("addendum", "addenda"),
             ("alga", "algae"),
             ("alumna", "alumnae"),
